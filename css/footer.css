@@ -1,0 +1,44 @@
+/*    FOOTER
+===================== */
+.redes {
+    color: #ffffff;
+    background-image: url(../img/footer.svg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.redes-social {
+    grid-column: 2;
+    margin: 20px;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.redes-social__title {
+    margin: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.redes-social__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+.redes-social img {
+    width: 55px;
+}
+
+.redes-social__icons a {
+    margin: 5px 15px;
+}
+
+.redes-social__icons a:hover {
+    text-decoration: underline;
+}

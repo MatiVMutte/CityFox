@@ -1,0 +1,227 @@
+/*Roboto Slaf 400, 700
+  Roboto 400 500 700 900
+  Roboto Mono 400 500 700
+*/
+
+/*    GENERAL
+====================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Borra todos los estilos POR DEFECTO del navegador */
+  font-family: 'Montserrat', sans-serif;
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  width: fit-content;
+}
+body {
+  background-color: #000000;
+}
+/*    HEADER
+====================== */
+.header {
+  background-color: black;
+  position: fixed;
+  z-index: 100; /* Se pone encima de todos los elementos */ 
+  color: white;
+  width: 100%;
+  height: 60px;
+  display: grid; /* Separa automaticamente en filas (o columnas) */
+  grid-template-columns: 1fr 1fr; /* Cuantas Filas? Mientras mas fragmentos mas columnas */
+  /* grid-template-columns: 1fr auto auto;  Cuantas columnas? */
+}
+
+.header__title {
+  width: auto;
+  height: auto;
+  display: flex; /* Activa Flex-Box --> Para usar sus propiedades */
+  align-items: center; /* Los centra en el contenedor verticalmente */
+  justify-self: flex-start; /* Posiciona horizontalmente (end -> al final) */
+  margin-left: 30px;
+}
+
+.header__title a {
+  text-decoration: none;
+  color: #fff;
+}
+
+span {
+  color: #9017BB;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  margin-right: 30px;
+  justify-content: space-between;
+}
+
+.header-nav__bar {
+  list-style: none;
+  display: inline-flex;
+}
+
+.header-nav__bar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.header-nav__bar a:hover {
+  color: #9017BB;
+}
+
+/*    INICIO
+====================== */
+video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.home {
+  background-image: url(../img/Fondo-Logo.svg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-container {
+  margin-top: 100px;
+  grid-column: 2;
+  display:grid;
+  grid-template-rows: 1fr 100px 1fr;
+  justify-items: center;
+}
+
+.main-container__title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 10px; /* Espacio entre cada letra */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-shadow: 0 0 5px #9017BB,0 0 10px #9017BB,0 0 5px #9017BB;
+}
+
+.main-container__text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 10px; /* Espacio entre cada letra */
+  color: #fff;
+}
+
+.main-container__buttom {
+  background-color: #9017BB;
+  display: inline-block; /* Para que podamos agregarle Padding , etc */
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  height: 45px;
+  width: 160px;
+  letter-spacing: 3px;
+  text-align: center;
+  box-shadow:  0 0px 5px 0px #9017BB;
+  border: 2px solid #9021b8;
+  transition: box-shadow 0.5s ease;
+}
+.main-container__buttom:hover {
+  box-shadow:  0 0px 12px 0px #9017BB;
+  transition: all 0.3s ease-in-out;
+}
+.main-container__buttom:active {
+  background-color: #8f17bb8a;
+}
+
+/*    SOBRE NOSOTROS
+=========================== */
+.section-nos {
+  background-color: #000000;
+  width: 100%;
+  color: #fff;
+  padding: 50px;
+}
+
+.section-nos-box {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-nos-box h3, p, a {
+  grid-column: 1;
+  text-align: center;
+}
+
+.section-nos-box img {
+  grid-column: 2;
+  height: 400px;
+  
+}
+
+.section-nos-box__img {
+  display: flex;
+  justify-content: center;
+}
+
+.section-nos-box-hijo {
+  display:grid;
+  grid-template-rows: auto auto 1fr;
+  justify-items: center;
+}
+
+.section-nos-box__title {
+  font-size: 2.5em;
+}
+
+.section-nos-box__text {
+  margin: 50px 0;
+}
+
+.section-nos-box-hijo a {
+  margin-top: 30px;
+  background-color: #9017BB;
+  display: inline-block; /* Para que podamos agregarle Padding , etc */
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  height: 45px;
+  width: 150px;
+  text-align: center;
+  box-shadow:  0 0px 5px 0px #9017BB;
+  border: 2px solid #9021b8;
+  transition: box-shadow 0.5s ease;
+}
+.section-nos-box-hijo a:hover {
+  box-shadow:  0 0px 12px 0px #9017BB;
+  transition: all 0.3s ease-in-out;
+}
+.section-nos-box-hijo a:active {
+  background-color: #8f17bb8a;
+}
+
+/* Formulario */
+label{
+  pointer-events: none;
+}
+

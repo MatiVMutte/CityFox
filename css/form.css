@@ -1,0 +1,98 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.content-form{
+    background-color:#000;
+    color:#fff;
+}
+.content-form .form .form-header .form-title{
+    text-align: center;
+    font-size:40px;
+    padding: 14px 0;
+}
+
+.content-form .form .form-header .form-title span{
+    color:#9017BB;
+    
+}
+
+.content-form .form{
+    width: 100%;
+    max-width: 650px;
+    margin: 10px auto;
+    /* padding: 5px 35px; */
+    /* margin-top: 30px; */
+    padding-bottom: 30px;
+    border-radius: 3px
+}
+
+.content-form .form .form-label {
+    display: block;
+    color: #9017BB;
+    font-size: 16px;
+    font-family: roboto;
+    position: relative;
+}
+
+#nombre{
+    width: 49%;
+    margin-right: 1.1%;
+}
+
+#apellido{
+    width:49%;
+    
+}
+#form-label-nombre{
+    float: left;
+}
+#form-label-apellido{
+    text-align: right;
+    width: 61.5%;
+}
+.content-form .form .form-input , .form-textarea {
+    background: rgb(10, 10, 10);
+    border: none;
+    outline:none;
+    border-bottom: 2px solid #9017BB;
+    box-shadow:  0 8px 10px -8px #9017BB;
+    width: 100%;
+    padding:12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family:ROBOTO;
+}
+
+.content-form .form  .form-textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.content-form .form .btn-submit{
+    width: 100%;
+    font-family: ROBOTO;
+    outline:none;
+    background: #9017BB;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    padding:15px 0;
+    cursor:pointer;
+    box-shadow:  0 0px 3px 0px #9017BB;
+    border: 2px solid #9017BB;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.content-form .form .btn-submit:hover{
+    background: #ab1cdf;
+    box-shadow:  0 0px 12px 0px #9017BB;
+    transition: all 0.3s ease-in-out;
+}
+.content-form .form .btn-submit:active{
+    background: #ab1cdf;
+    box-shadow:  0 0px 30px 0px #9017BB;
+    transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}/*
+body{
+    background-color: #151320;
+    height: 100vh;
+    display: grid;
+    place-items: center center;
+    font-family: 'Poppins',sans-serif;
+}*/
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+}
+.card{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+.card:hover {
+    background-color: #39004e;
+    box-shadow:  0 0px 12px 0px #2a003aad;
+    transition: all 0.3s ease-in-out;
+    box-shadow:  0 0px 12px 0px #9017BB;
+}
+.containerr{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+.img-card {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.containerr:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+/*.card1>.containerr:after{
+    background-image: linear-gradient(
+        135deg,
+        #0000ec71,
+        #fb36f47e
+    );
+}
+.card2>.containerr:after{
+    background-image: linear-gradient(
+        135deg,
+        #2bdde375,
+        #42ffdc80
+    );
+}
+.card3>.containerr:after{
+    background-image: linear-gradient(
+        135deg,
+        #ffac1d6e,
+        #f84f1c85
+    );
+}*/
+.details{
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.details>h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+    text-align: center;
+}
+.details>p{
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.details-contact {
+    margin-top: 10px;
+  background-color: #5900be;
+  display: inline-block; /* Para que podamos agregarle Padding , etc */
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  height: 45px;
+  width: 160px;
+  letter-spacing: 3px;
+  text-align: center;
+  transition: box-shadow 0.5s ease;
+}
+.details-contact:hover {
+    box-shadow:  0 0px 30px 0px #500092;
+    color: #ffffff;
+    transition: all 0.3s linear;
+}
+.details-contact:active {
+    background-color: #8f17bb8a;
+}
